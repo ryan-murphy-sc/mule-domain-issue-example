@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domain:mule-domain
+        xmlns:os="http://www.mulesoft.org/schema/mule/os"
+        xmlns="http://www.mulesoft.org/schema/mule/core"
+        xmlns:domain="http://www.mulesoft.org/schema/mule/ee/domain"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xsi:schemaLocation="
+               http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+               http://www.mulesoft.org/schema/mule/ee/domain http://www.mulesoft.org/schema/mule/ee/domain/current/mule-domain-ee.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd">
+
+    <!-- configure here resource to be shared within the domain -->
+	<os:config name="ObjectStore_Config" doc:name="ObjectStore Config" doc:id="10bf2f7e-0965-444c-821b-a6a02431f65f" />
+	
+	<os:object-store name="Domain_Object_store" doc:name="Object store" doc:id="2e644243-d159-426a-886c-5d07de5bcd0e" maxEntries="1000" entryTtl="4" entryTtlUnit="DAYS" config-ref="ObjectStore_Config"/>
+
+</domain:mule-domain>

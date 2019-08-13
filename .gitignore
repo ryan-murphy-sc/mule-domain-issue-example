@@ -4,7 +4,6 @@
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
@@ -41,7 +40,6 @@ local.properties
 # --------------- #
 # Studio-specific #
 # --------------- #
-target/
 .mule/**
 .mule/**/*
 .DS_Store

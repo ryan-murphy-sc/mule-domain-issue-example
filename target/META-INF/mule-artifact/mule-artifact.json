@@ -1,0 +1,21 @@
+{
+  "configs": [],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:mule-domain-issue-example:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.2.0",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "mule-domain-config.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
